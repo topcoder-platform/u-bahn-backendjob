@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ubahn-skill-processor-trigger:
+    image: ubahn-skill-processor-trigger:latest
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    env_file:
+      - api.env
+    network_mode: "host"
