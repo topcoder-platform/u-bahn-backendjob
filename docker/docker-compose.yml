@@ -1,7 +1,7 @@
 version: '3'
 services:
-  ubahn-skill-processor-trigger:
-    image: ubahn-skill-processor-trigger:latest
+  u-bahn-backendjob:
+    image: u-bahn-backendjob:latest
     build:
       context: ../
       dockerfile: docker/Dockerfile
