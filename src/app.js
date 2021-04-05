@@ -18,11 +18,13 @@ async function main() {
   const redis_url = config.REDIS_URL
   let offset = config.USER_RECORD_OFFSET
   let client
+
   if (redis_url) {
     client = redis.createClient(redis_url)
   } else {
     client = redis.createClient({ host: config.REDIS_HOST, port: config.REDIS_PORT, password: config.REDIS_PASSWORD, user: config.REDIS_USER })
   }
+
   const offsetFromRedis = await promisify(client.get).bind(client)(config.OFFSET_REDIS_KEY)
   if (offsetFromRedis) {
     offset = offsetFromRedis
