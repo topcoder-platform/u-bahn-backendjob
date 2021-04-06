@@ -2,10 +2,10 @@
 FROM node:12.16.3
 
 # Copy the current directory into the Docker image
-COPY . /ubahn-skill-processor-trigger
+COPY . /u-bahn-backendjob
 
 # Set working directory for future use
-WORKDIR /ubahn-skill-processor-trigger
+WORKDIR /u-bahn-backendjob
 
 # Install the dependencies from package.json
 RUN npm install
