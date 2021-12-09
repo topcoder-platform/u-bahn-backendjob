@@ -24,7 +24,7 @@
     "sequelize": "^6.3.5",
     "tc-bus-api-wrapper": "github:topcoder-platform/tc-bus-api-wrapper",
     "tc-core-library-js": "appirio-tech/tc-core-library-js.git#v2.6",
-    "winston": "^3.2.1"
+    "winston": "^3.3.3"
   },
   "engines": {
     "node": "12.x"
