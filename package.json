@@ -7,7 +7,9 @@
     "start": "node src/app.js",
     "insert-data": "node script/insert-data.js",
     "lint": "standard",
-    "lint:fix": "standard --fix"
+    "lint:fix": "standard --fix",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "TCSCODER",
   "license": "none",
@@ -16,7 +18,7 @@
   },
   "dependencies": {
     "config": "^3.1.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.20",
     "redis": "^3.1.0",
     "pg": "^8.5.1",
     "pg-hstore": "^2.3.3",
@@ -24,9 +26,11 @@
     "sequelize": "^6.3.5",
     "tc-bus-api-wrapper": "github:topcoder-platform/tc-bus-api-wrapper",
     "tc-core-library-js": "appirio-tech/tc-core-library-js.git#v2.6",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "@snyk/protect": "latest"
   },
   "engines": {
     "node": "12.x"
-  }
+  },
+  "snyk": true
 }
