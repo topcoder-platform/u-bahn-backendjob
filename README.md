@@ -1,3 +1,5 @@
+# DEPRECATED - Feb 1, 2024 - see https://topcoder.atlassian.net/browse/CORE-203
+
 # UBahn - Backend Job
 
 Queries U-bahn's database for users and posts them to kafka to be picked up by the u-bahn-skill processor
@@ -48,27 +50,27 @@ The following parameters can be set in config files or in env variables:
 
 1. From the project root directory, run the following command to install the dependencies
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 2. To run linters if required
 
-    ```bash
-    npm run lint
-    ```
+   ```bash
+   npm run lint
+   ```
 
-    To fix possible lint errors:
+   To fix possible lint errors:
 
-    ```bash
-    npm run lint:fix
-    ```
+   ```bash
+   npm run lint:fix
+   ```
 
 3. Start the processor and health check dropin
 
-    ```bash
-    npm start
-    ```
+   ```bash
+   npm start
+   ```
 
 ## Local Deployment with Docker
 
@@ -82,9 +84,9 @@ To run the Skill Processor Trigger using docker, follow the below steps
 
 4. Once that is done, run the following command
 
-    ```bash
-    docker-compose up
-    ```
+   ```bash
+   docker-compose up
+   ```
 
 5. When you are running the application for the first time, It will take some time initially to download the image and install the dependencies
 
@@ -94,4 +96,4 @@ To run the Skill Processor Trigger using docker, follow the below steps
 2. run `npm run insert-data` to load test data to db
 3. run `npm start` to post event when there is not offset key in redis
 4. run `npm start` to post event when there is an offset key in redis
-6. watch the app console, it will show the offset and post message 
+5. watch the app console, it will show the offset and post message
